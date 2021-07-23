@@ -38,7 +38,7 @@ const ExpenseForm = (props) => {
     event.preventDefault(); //prevents the auto refresh of the webpage
     const expenseDate = {
       title: enteredTitle,
-      amount: enteredAmount,
+      amount: +enteredAmount,
       date: new Date(enteredDate),
     };
 
@@ -78,6 +78,7 @@ const ExpenseForm = (props) => {
       </div>
 
       <div className="new-expense__actions">
+      <button onClick={props.onCancel} type="button">Cancel</button>
         <button type="submit">Submit</button>
       </div>
     </form>
