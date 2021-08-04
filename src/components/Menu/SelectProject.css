@@ -1,0 +1,8 @@
+.task {
+    padding: 1rem;
+  }
+  
+  .task:hover {
+    color: greenyellow;
+    cursor: pointer;
+  }
